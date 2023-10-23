@@ -1,0 +1,179 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+body .content {
+    flex: 1;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #e5e7eb;
+    font-size: 18px;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+}
+
+.signup .content,
+button {
+    background-color: #3882f6;
+}
+
+button {
+    color: white;
+    border-radius: 6px;
+    border-style: none;
+    padding: 5px 10px;
+}
+button:hover {
+    color: black;
+}
+
+.hero,
+.header,
+.footer {
+    background-color: #1f2937;
+    display: flex;
+}
+.hero,
+.info,
+.quote,
+.signup {
+    display: flex;
+    padding: 25px 10%;
+}
+
+.hero {
+    gap: 15px;
+}
+.hero .content {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.hero .big {
+    color: #f9faf8;
+    font-size: 48px;
+}
+.hero .small {
+    color: gray;
+}
+.hero button {
+    align-self: flex-start;
+}
+.hero img {
+    flex: 1;
+    align-self: center;
+}
+
+.info {
+    color: #1f2937;
+    font-weight: bolder;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.info .content {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+}
+.info_card {
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+    flex-basis: 150px;
+    align-items: center;
+}
+.info_card img {
+    border: 3px solid #3882f6;
+    border-radius: 30px;
+}
+.info .big {
+    color: #1f2937;
+    font-size: 36px;
+}
+
+.quote {
+    flex-direction: column;
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+.quote .content {
+    display: flex;
+    padding: 0 10%;
+}
+.quote .small {
+    color: #1f2937;
+    font-size: 18px;
+    align-self: flex-end;
+}
+
+.signup {
+    justify-content: center;
+}
+.signup .content {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-basis: 400px;
+    flex-grow: 0;
+    padding: 20px;
+    border-radius: 5px;
+}
+.signup button {
+    flex-shrink: 0;
+    border-color: white;
+    border-style: solid;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+}
+
+.footer {
+    justify-content: center;
+    font-size: small;
+    color: gray;
+    padding: 15px;
+}
+
+.small {
+    font-size: small;
+}
+.big {
+    font-weight: bolder;
+}
